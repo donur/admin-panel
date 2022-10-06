@@ -63,7 +63,9 @@
 
   <div class="bg-secondary text-white p-2">
     <div class="container">
-      <h1 class="h5 mb-0"><i class="fa fa-caret-right"></i>Product Details</h1>
+      <h1 class="h5 mb-0">
+        <i class="fa fa-caret-right"></i>Product Details
+      </h1>
     </div>
   </div>
 
@@ -80,7 +82,6 @@
             <i class="fa fa-trash"></i> Delete Product
           </button>
         </div>
-
       </div>
     </div>
   </section>
@@ -99,7 +100,8 @@
             <i class="fa fa-question"></i> Bilgilerinizi kontrol ediniz.
           </div>
           <div class="alert alert-danger">
-            <i class="fa fa-times"></i> Bilinmeyen bir hata oluştu. Tekrar deneyiniz.
+            <i class="fa fa-times"></i> Bilinmeyen bir hata oluştu. Tekrar
+            deneyiniz.
           </div>
         </div>
       </div>
@@ -115,11 +117,11 @@
             <form>
               <div class="mb-3">
                 <label for="name">Product Name</label>
-                <input type="text" name="name" id="name" class="form-control">
+                <input type="text" name="name" id="name" class="form-control" />
               </div>
               <div class="mb-3">
                 <label for="price">Price</label>
-                <input type="text" name="price" id="price" class="form-control">
+                <input type="text" name="price" id="price" class="form-control" />
               </div>
               <div class="mb-3">
                 <label for="name">Category</label>
@@ -132,7 +134,7 @@
               <div class="mb-3">
                 <label for="name">Image</label>
                 <div class="form-file">
-                  <input type="file" class="form-control" id="customFile">
+                  <input type="file" class="form-control" id="customFile" />
                   <label for="customFile" class="form-file-label">
                     <span class="form-file-text">Choose File</span>
                     <span class="form-file-button">Browse</span>
@@ -142,7 +144,7 @@
 
               <div class="mb-3">
                 <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="isApproved">
+                  <input type="checkbox" class="form-check-input" id="isApproved" />
                   <label for="isApproved" class="form-check-label">isApproved</label>
                 </div>
               </div>
@@ -153,32 +155,25 @@
               </div>
 
               <div class="mb-3">
-                <button class="btn btn-primary"> <i class="fa fa-check"></i> Save Changes</button>
+                <button class="btn btn-primary">
+                  <i class="fa fa-check"></i> Save Changes
+                </button>
               </div>
-
-
-
-
             </form>
-
           </div>
         </div>
-
       </div>
     </div>
-
   </div>
-
-
 
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
   <script>
-    ClassicEditor
-      .create(document.querySelector('#description'))
-      .catch(error => {
+    ClassicEditor.create(document.querySelector("#description")).catch(
+      (error) => {
         console.error(error);
-      });
+      }
+    );
   </script>
 </body>
 

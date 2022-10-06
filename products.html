@@ -77,7 +77,7 @@
         </div>
         <div class="col-md-4 ms-auto">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search Product">
+            <input type="text" class="form-control" placeholder="Search Product" />
             <div class="input-group-append">
               <button class="btn btn-primary">Search</button>
             </div>
@@ -86,12 +86,6 @@
       </div>
     </div>
   </section>
-
-
-
-
-
-
 
   <div class="container my-3">
     <div class="row">
@@ -230,11 +224,11 @@
           <form>
             <div class="mb-3">
               <label for="name">Product Name</label>
-              <input type="text" name="name" id="name" class="form-control">
+              <input type="text" name="name" id="name" class="form-control" />
             </div>
             <div class="mb-3">
               <label for="price">Price</label>
-              <input type="text" name="price" id="price" class="form-control">
+              <input type="text" name="price" id="price" class="form-control" />
             </div>
             <div class="mb-3">
               <label for="name">Category</label>
@@ -247,7 +241,7 @@
             <div class="mb-3">
               <label for="name">Image</label>
               <div class="form-file">
-                <input type="file" class="form-control" id="customFile">
+                <input type="file" class="form-control" id="customFile" />
                 <label for="customFile" class="form-file-label">
                   <span class="form-file-text">Choose File</span>
                   <span class="form-file-button">Browse</span>
@@ -257,7 +251,7 @@
 
             <div class="mb-3">
               <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="isApproved">
+                <input type="checkbox" class="form-check-input" id="isApproved" />
                 <label for="isApproved" class="form-check-label">isApproved</label>
               </div>
             </div>
@@ -266,12 +260,12 @@
               <label for="description">Description</label>
               <textarea name="" id="description" cols="30" rows="10" class="form-control"></textarea>
             </div>
-
-
           </form>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-dismiss="modal">Save Changes</button>
+          <button class="btn btn-primary" data-bs-dismiss="modal">
+            Save Changes
+          </button>
         </div>
       </div>
     </div>
@@ -280,11 +274,11 @@
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
   <script>
-    ClassicEditor
-      .create(document.querySelector('#description'))
-      .catch(error => {
+    ClassicEditor.create(document.querySelector("#description")).catch(
+      (error) => {
         console.error(error);
-      });
+      }
+    );
   </script>
 </body>
 

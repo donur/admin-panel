@@ -85,7 +85,6 @@
             <i class="fa fa-trash"></i> Delete Account
           </button>
         </div>
-
       </div>
     </div>
   </section>
@@ -104,7 +103,8 @@
             <i class="fa fa-question"></i> Bilgilerinizi kontrol ediniz.
           </div>
           <div class="alert alert-danger">
-            <i class="fa fa-times"></i> Bilinmeyen bir hata oluştu. Tekrar deneyiniz.
+            <i class="fa fa-times"></i> Bilinmeyen bir hata oluştu. Tekrar
+            deneyiniz.
           </div>
         </div>
       </div>
@@ -116,15 +116,13 @@
       <div class="col-md-3">
         <div class="card">
           <div class="card-header">Your Image</div>
-          <img src="" alt="" class="card-img-top p-3">
+          <img src="" alt="" class="card-img-top p-3" />
           <div class="card-body">
             <button class="btn btn-secondary btn-block">
               <i class="fa fa-arrow-circle-up"> Upload Image</i>
             </button>
-
           </div>
         </div>
-
       </div>
       <div class="col-md-9">
         <div class="card">
@@ -133,11 +131,11 @@
             <form>
               <div class="mb-3">
                 <label for="name">Name</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" />
               </div>
               <div class="mb-3">
                 <label for="email">Email</label>
-                <input type="email" class="form-control">
+                <input type="email" class="form-control" />
               </div>
               <div class="mb-3">
                 <label for="name">Name</label>
@@ -152,23 +150,16 @@
             </form>
           </div>
         </div>
-
       </div>
-
     </div>
-
   </div>
-
-
 
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
   <script>
-    ClassicEditor
-      .create(document.querySelector('#about'))
-      .catch(error => {
-        console.error(error);
-      });
+    ClassicEditor.create(document.querySelector("#about")).catch((error) => {
+      console.error(error);
+    });
   </script>
 </body>
 
